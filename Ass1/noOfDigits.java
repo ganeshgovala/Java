@@ -13,3 +13,11 @@ class HelloWorld {
         System.out.println("Total Number of digits : "+count);
     }
 }
+
+// output 1 
+Enter Number : 458123
+Total Number of digits : 6
+
+// output 2
+Enter Number : 6841684
+Total Number of digits : 7
