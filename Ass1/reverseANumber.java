@@ -5,7 +5,6 @@ class HelloWorld {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Number : ");
         int num = sc.nextInt();
-        int original = num;
         int res = 0;
         int rem = 0;
         while(num != 0) {
