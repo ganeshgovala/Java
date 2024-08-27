@@ -1,23 +1,13 @@
 class MyProgram {
-    
-    int x;
-    int y;
-    int z;
-    MyProgram(int x, int y) {
-        this.x = x;
-        this.y = y;
+    MyProgram() {
+        System.out.println("This is default Constructor");
     }
-    
     MyProgram(int x, int y, int z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        System.out.println("This is parameterized constructor");
     }
     
     public static void main(String args[]) {
-        MyProgram obj = new MyProgram(5, 4);
-        System.out.println(obj.y);
+        MyProgram obj = new MyProgram();
         MyProgram obj2 = new MyProgram(6, 10, 12);
-        System.out.println(obj2.z);
     }
 }
