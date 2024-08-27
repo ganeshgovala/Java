@@ -1,46 +1,15 @@
 Aim : a JAVA program to display default value of primitive data type of JAVA
 
 description : 
-  In Java, primitive data types are the most basic data types provided by the language. They are not objects and represent single values directly. Java has eight primitive data types:
-  byte:
-  Size: 8 bits
-  Range: -128 to 127
-  Example: byte age = 25;
-  
-  short:
-  Size: 16 bits
-  Range: -32,768 to 32,767
-  Example: short year = 2024;
-  
-  int:
-  Size: 32 bits
-  Range: -2^31 to 2^31 - 1 (-2,147,483,648 to 2,147,483,647)
-  Example: int population = 1000000;
-  
-  long:
-  Size: 64 bits
-  Range: -2^63 to 2^63 - 1 (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
-  Example: long distance = 15000000000L;
-  
-  float:
-  Size: 32 bits
-  Range: Approximately ±3.40282347E+38F (6-7 decimal digits of precision)
-  Example: float temperature = 98.6F;
-  
-  double:
-  Size: 64 bits
-  Range: Approximately ±1.79769313486231570E+308 (15-16 decimal digits of precision)
-  Example: double pi = 3.14159265358979;
-  
-  char:
-  Size: 16 bits
-  Range: 0 to 65,535 (unsigned, representing Unicode characters)
-  Example: char initial = 'A';
-  
-  boolean:
-  Size: Not precisely defined (but logically represents one bit)
-  Values: true or false
-  Example: boolean isJavaFun = true;
+  In Java, primitive data types are basic types representing single values. The eight primitive types are:
+  - **byte**: 8 bits
+  - **short**: 16 bits
+  - **int**: 32 bits
+  - **long**: 64 bits
+  - **float**: 32 bits
+  - **double**: 64 bits
+  - **char**: 16 bits
+  - **boolean**: Represents true or false
 
 Program : 
   class DefaultVal {
