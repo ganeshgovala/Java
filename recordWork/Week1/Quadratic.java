@@ -40,8 +40,15 @@ Program :
 
 output : 
 Test case 1 :
-  Enter the value of a : 2 
-  Enter the value of b : 5
-  0.0
-  -2.5
-  Roots are Real and Distinct
+        Enter the value of a : 2 
+        Enter the value of b : 5
+        0.0
+        -2.5
+        Roots are Real and Distinct
+
+Test case 2 :
+      Enter the value of a : 6
+      Enter the value of b : 2
+      0.0
+      -0.3333333333333333
+      Roots are Real and Distinct
