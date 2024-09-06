@@ -7,9 +7,10 @@ class HelloWorld {
         int original = num;
         int res = 0;
         int rem = 0;
+        int digits = Integer.toString(num).length();
         while(num != 0) {
             rem = num % 10;
-            res += Math.pow(rem, 3);
+            res += Math.pow(rem, digits);
             num /= 10;
         }
         if(res == original) {
