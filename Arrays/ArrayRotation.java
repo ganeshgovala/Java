@@ -3,41 +3,29 @@ import java.util.*;
 
 class Hello {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of elements : ");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        
-        // Reading Elements
-        for(int i = 0; i < n; i++) {
-            System.out.print("Enter : ");
-            arr[i] = sc.nextInt();
-        }
-        
-        System.out.println("Before Changing");
+        int[] arr = {1,2,3,4,5,6,7,8,9,10};
+        int k = 5;
+        rotateArray(arr, k);
         for(int value : arr) {
-            System.out.print( value+" ");
+            System.out.print(value + " ");
         }
-        System.out.println("");
-        
-        // logic
-        int k = 3;
-        int temp, prev;
-        while(k != 0) {
-            int i = 0;
-            prev = arr[i];
-            arr[i] = arr[n - 1];
-            for(int j = i + 1; j < n; j++) {
-                temp = arr[j];
-                arr[j] = prev;
-                prev = temp;
-            }
-            k--;
-        }
-        
-        System.out.println("After Changing");
-        for(int value : arr) {
-            System.out.print(value +" ");
+    }
+    
+    public static void rotateArray(int[] arr, int k) {
+        int n = arr.length;
+        reverse(arr, 0, n - 1);
+        reverse(arr, 0, k - 1);
+        reverse(arr, k, n - 1);
+    }
+    
+    public static void reverse(int[] arr, int start, int end) {
+        int temp;
+        while(start < end) {
+            temp = arr[end];
+            arr[end] = arr[start];
+            arr[start] = temp;
+            start++;
+            end--;
         }
     }
 }
