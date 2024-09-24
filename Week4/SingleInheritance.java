@@ -9,9 +9,9 @@ class Child extends Parent {
 
 class Parent {
     void method() {
-        System.out.print("This is a method");
+        System.out.print("This is a Parent class");
     }
 }
 
 output : 
-This is a method
+This is a Parent class
